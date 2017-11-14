@@ -25,7 +25,7 @@ for i in range(details.shape[0]):
   img_abs_path = details.loc[i][4]
   img_path = base_image_url + folder + img_abs_path
   data_str = "--data" + " " + img_path
-  micr_code = "-H " + "'micr_code: %s'" %(details.loc[0][5])
+  micr_code = "-H " + "'micr_code: %s'" %(details.loc[i][5])
   account_type_str = "-H 'act_type: sa'"  
   amount_match = "-H 'amt_match: y'"
   api_key_str = "-H 'api-key: 900c3022-f2fe-425c-9d47-4682652138c8'"
@@ -47,7 +47,7 @@ for i in range(details.shape[0]):
   print final_curl_cmd
 
 
-  break
+  
 
 
 
