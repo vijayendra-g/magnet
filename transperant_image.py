@@ -1,8 +1,8 @@
 from PIL import Image
 import os
 
-folder_path_input = "C:/Users/H213561/Documents/magnet/images-whiteBG/"
-folder_path_output= "C:/Users/H213561/Documents/magnet/images-transparentBG/"
+folder_path_input = "C:/Users/H213561/Documents/magnet/in-words-ashu/"
+folder_path_output= "C:/Users/H213561/Documents/magnet/in-words-ashu-transparentBG/"
 
 image_names =os.listdir(folder_path_input)
 
