@@ -2,8 +2,7 @@ import os
 import sys
 import csv
 import cv2
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+
 
 
 input_folder_path = "final-data"
