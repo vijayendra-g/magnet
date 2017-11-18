@@ -11,7 +11,7 @@ base_image_url = os.getcwd()
 folder = "\\Combined\\"
 
 
-details = pd.read_csv('details3.csv')
+details = pd.read_csv('details3.csv') #change this file to latest final-extracted-cheque.csv
 
 details = details.drop(details.columns[[0,1]], axis=1)
 print details.shape[0]
@@ -45,6 +45,21 @@ for i in range(details.shape[0]):
   final_curl_cmd = curl_str + " " + amount_digit + " " + amount_words + " " + cheque_num + " "  + data_str + " " + micr_code + " " + account_type_str + " " + amount_match + " " + api_key_str + " " + ben_name + " " + cache_cntrl_str + " " + cheque_date + " " + cheque_stale + " " + encoding + " " + img_size + " " + mime_type + " " + payee_acc_num + " " + postman_token + " " + san_no
 
   print final_curl_cmd
+
+  """
+
+  subprocess.call([
+  'curl',
+  '-X',
+  'POST',
+  '-d',
+  flow_x,
+  'http://localhost:8080/firewall/rules/0000000000000001'
+  ])
+
+  """
+
+  break
 
 
   
