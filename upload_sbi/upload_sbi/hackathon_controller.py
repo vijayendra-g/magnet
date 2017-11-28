@@ -20,7 +20,7 @@ base_url = 'http://apiplatformcloudse-gseapicssbisecond-uqlpluu8.srv.ravcloud.co
 cheque_upload_base_url = 'http://apiplatformcloudse-gseapicssbisecond-uqlpluu8.srv.ravcloud.com:8001/InsertChqDetails'
 
 
-cheque_input_img = "C:\\Shypz\\Thea_Labs_AI_DS_ML_DeepLearning_Blockchains\\SBI_Hackathon\\magnet\\upload_sbi\\upload_sbi\\"
+cheque_input_img = "<img_path>"
 
 
 
@@ -53,7 +53,7 @@ def genChequeByTeamID(teamID):
 	#subprocess.Popen("opncv_demo_image_extraction.py cheque_img")
 	#h = hello()
 	#print h
-	os.system("python opncv_demo_image_extraction.py C:\\Shypz\\Thea_Labs_AI_DS_ML_DeepLearning_Blockchains\\SBI_Hackathon\\magnet\\upload_sbi\\upload_sbi\\final-image.jpg")
+	os.system("python opncv_demo_image_extraction.py <img_path>")
 	os.system("python ImageToDateAndNumber.py")
 	return "hello"
 
